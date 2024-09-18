@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operativos Móviles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E6E6FA; /* Lila claro */
+            color: #333;
+        }
+        header {
+            background-color: #001ba0; /* Rosado bebé */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+      
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            opacity: 0; /* Comienza invisible */
+            transform: translateY(-50px); /* Comienza desplazado hacia arriba */
+            animation: slideIn 1s forwards; /* Aplicar la animación */
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1; /* Al final de la animación, se vuelve visible */
+                transform: translateY(0); /* Se mueve a su posición original */
+            }
+        }
+        nav {
+            color: #ffffff;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            justify-content: center; /* Centrar las tarjetas en la fila */
+            flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en múltiples filas si es necesario */
+            padding: 20px;
+        }
+        h2 {
+            color: #4682B4; /* Celeste bebé */
+        }
+        .card {
+            background-color: #ffffff; /* Rosado bebé */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            width: 300px; /* Ancho fijo para las tarjetas */
+            height: auto; /* Altura automática */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+            perspective: 1000px; /* Para el efecto de perspectiva */
+        }
+        .card:hover {
+            transform: translateY(-10px) rotateY(5deg); /* Efecto de elevación y rotación al pasar el ratón */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4682B4; /* Celeste bebé */
+            color: white;
+        }
+        .image-container {
+            perspective: 1000px; /* Perspectiva para el efecto 3D */
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s; /* Transición suave para el efecto de imagen */
+        }
+        .image-container:hover img {
+            transform: rotateY(10deg) rotateX(10deg); /* Efecto de rotación en 3D al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sistemas Operativos Móviles</h1>
+    <nav>
+        <a href="#android">Android</a>
+        <a href="#ios">iOS</a>
+        <a href="#alternativos">Alternativos</a>
+    </nav>
+</header>
+
+<section>
+  
+        <div class="card" id="android">
+            <h2>Android</h2>
+            <div class="image-container">
+                <img src="https://www.av-test.org/fileadmin/News/Pictures/2023/11/Android_Dauertest_Consumer_05-10_23/1023_Android_Dauertest_Aufmacher.jpg" alt="Logo Android">
+            </div>
+            <p>Desarrollado por Google, es el sistema operativo más utilizado en el mundo, con una amplia variedad de versiones y personalizaciones por parte de diferentes fabricantes.</p>
+            <p><strong>Características:</strong> Código abierto, gran cantidad de aplicaciones disponibles, personalización extensa.</p>
+        </div>
+    
+     
+
+    <div class="card" id="ios">
+        <h2>iOS</h2>
+        <div class="image-container">
+            <img src="https://media.revistagq.com/photos/6667ff44f0e9f9614b23c162/1:1/w_5489,h_5489,c_limit/2156452495" alt="Logo Android">
+        </div>
+        <p>Sistema operativo exclusivo de Apple para sus dispositivos como iPhone y iPad.</p>
+        <p><strong>Características:</strong> Interfaz intuitiva, alta seguridad, integración fluida con otros dispositivos Apple.</p>
+    </div>
+
+    <div class="card" id="alternativos">
+        <h2>Alternativas a Android</h2>
+        <ul>
+            <li><strong>LineageOS:</strong> Una versión personalizada de Android que prioriza la privacidad y la personalización.</li>
+            <li><strong>/e/OS:</strong> Un sistema operativo basado en LineageOS que se centra en la privacidad y la independencia del ecosistema de Google.</li>
+            <li><strong>KaiOS:</strong> Basado en Linux, es un sistema operativo ligero diseñado para teléfonos básicos.</li>
+            <li><strong>Tizen OS:</strong> Desarrollado por Samsung, utilizado principalmente en dispositivos como televisores inteligentes y relojes.</li>
+            <li><strong>Sailfish OS:</strong> Un sistema operativo móvil de código abierto desarrollado por Jolla, que permite el uso de aplicaciones de Android.</li>
+            <li><strong>Ubuntu Touch:</strong> Basado en Ubuntu Linux, busca ofrecer una experiencia móvil intuitiva con acceso a aplicaciones a través de la tienda de Ubuntu.</li>
+            <li><strong>Plasma Mobile:</strong> Un sistema operativo móvil basado en el entorno de escritorio KDE Plasma.</li>
+            <li><strong>postmarketOS:</strong> Un proyecto que busca extender la vida útil de los dispositivos móviles mediante un sistema basado en Alpine Linux.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Sistemas en Desuso</h2>
+        <ul>
+            <li><strong>Windows Phone:</strong> Intentó competir con Android e iOS pero fue descontinuado.</li>
+            <li><strong>Firefox OS:</strong> Un sistema operativo móvil basado en web que ya no está en desarrollo.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=http%3A%2F%2Fi.nextmedia.com.au%2Fnews%2Ffirefox_normal.png&w=480&c=0&s=1" alt="Logo Android">
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2024 Sistemas Operativos Móviles
+</footer>
+
+</body>
+</html>
